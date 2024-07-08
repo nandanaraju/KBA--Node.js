@@ -109,8 +109,8 @@ function searchItems(searchTerm){
 //function to add item prompt
 function updateItemPrompt(){
     rl.question("Enter item id: ", function(id){
-        rl.question("Enter item name: ", function(name){
-            rl.question("Enter item author: ", function(author){
+        rl.question("Enter item name: ", function(newName){
+            rl.question("Enter item author: ", function(newAuthor){
                     updateItem(id, newName, newAuthor);
                     askCommand();
                 
